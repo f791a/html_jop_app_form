@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>jop application form</h2>
+    <form action="index.php" method="post">
+        <div>
+<label for="name">full_name</label>
+<input id="name" type="text" name="full name" required>
+</div>
+<br>
+<div>
+<label for="em">Email</label>
+<input id="em" type="email"required name="Email"> 
+</div>
+<br>
+<div>
+    <label for="pass">
+        Password</label>
+    <input id="pass" 
+    type="password" 
+    name="password" 
+    required 
+    minlength="7"
+     maxlength="17">
+</div>
+<br>
+<div>
+<label for="num">Number</label>
+<input id="num" type="tel" 
+name="number" required>
+</div>
+<br>
+<div>
+<label for="brith"> Your brithday</label>
+<input id="brith" type="date" name="brithday" required>
+</div>
+<br>
+<div>
+<label>sex</label>
+<input id="se" type="radio" name="sex" required>
+<label for="se"> Female</label>
+<input id="sx" type="radio" name="sex" required>
+<label for="sx"> male</label>
+</div>
+<br>
+<div>
+<label>choose your job</label>
+<br>
+<input id="fd" type="radio" name="job">
+<label for="fd">Front-End Developer</label>
+</div>
+<div>
+<input id="bd" type="radio" name="job">
+<label for="bd">Back-End Developer</label>
+</div>
+<div>
+<input id="fs" type="radio" name="job">
+<label for="fs">Full-stack Developer</label>
+</div>
+<div>
+<input id="ui" type="radio" name="job">
+<label for="ui">UI/UX Designer</label>
+</div>
+<br>
+<div>
+<label>skills</label>
+<br>
+<input id="s" type="checkbox" name="skills">
+<label for="s"> HTML</label>
+</div>
+<div>
+<input id="l" type="checkbox" name="skills">
+<label for="l"> javascript</label>
+</div>
+<div>
+<input id="k" type="checkbox" name="skills">
+<label for="k">CSS</label>
+</div>
+<div>
+<input id="i" type="checkbox" name="skills">
+<label for="i">python</label>
+</div>
+<br>
+<label for="yrs">Years_of_experience</label>
+<br>
+<select id="yrs" name="Years of experienc">
+    <option>1 Year</option>
+<option>3 Years</option>
+<option>4 Years</option>
+<option>+5 Years</option>
+</select>
+<br>
+<label for="language" > Languge</label>
+<br>
+<input id="language" list="language">
+<datalist id="language">
+    <option value="arabic">
+        <option value="english">
+<option value="german">
+<option value="chinese">
+</datalist>
+<br>
+<label for="cv">Add your cv</label>
+<br>
+<input id="cv" type="file" name="cv">
+<br>
+<label for="url">Add Github</label>
+<br>
+<input id="url" type="url" name="Github">
+<br>
+<textarea id="note" rows="5" cols="30" name="summary"
+ placeholder="Write a short summary about yourself">
+</textarea>
+<hr>
+<input type="submit">
+<input type="reset" >
+    </form>
+</body>
+</html>
